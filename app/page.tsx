@@ -23,9 +23,11 @@ export default function OilLandingPage() {
     <div className="flex flex-col min-h-screen bg-[#F5E6D3]">
       <header className="bg-[#F7F3E3] shadow-sm sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
+          <Link href={"/"}>
           <div className="flex items-center space-x-3">
             <img src={"/logo.png"} className='h-14 '/>
           </div>
+          </Link>
           <nav className="hidden md:block">
             <ul className="flex space-x-6">
               <li>
