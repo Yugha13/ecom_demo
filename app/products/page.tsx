@@ -2,6 +2,7 @@ import React from 'react'
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger, SheetTitle, SheetClose } from "@/components/ui/sheet"
 import { Heart, Menu, ShoppingCartIcon, User } from 'lucide-react'
+import Link from 'next/link'
 
 
 const page = () => {
@@ -23,12 +24,15 @@ const page = () => {
                     </Button>
                 </li>
               <li>
+              <Link href='/cart'>
+                        
                     <Button variant='ghost'>
                         <div className='flex flex-col place-content-center text-[#2F5C57] hover:text-[#1D4A44] transition-colors'>
                         <ShoppingCartIcon/>
                         </div>
                         View Cart
                     </Button>
+                      </Link>
                 </li>
               <li>
                     <Button variant='outline'>
@@ -194,11 +198,13 @@ const page = () => {
                       <span className="ml-2 text-lg text-gray-500 line-through">₹{product.originalPrice}</span>
                     </div>
                     <div className="flex flex-col gap-3">
-                      <Button 
-                        className="w-full bg-[#E88D67] hover:bg-[#D47D57] transition-all"
-                      >
-                        View Details
-                      </Button>
+                    <Link href='/1'>
+                        <Button 
+                          className="w-full bg-[#E88D67] hover:bg-[#D47D57] transition-all"
+                        >
+                          View Details
+                        </Button>
+                      </Link>
                       <Button 
                         variant="outline" 
                         className="w-full border-[#8B4513] text-[#8B4513] hover:bg-[#8B4513] hover:text-white transition-all"

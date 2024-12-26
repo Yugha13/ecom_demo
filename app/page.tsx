@@ -4,10 +4,11 @@ import BlurFade from "@/components/ui/blur-fade";
 import Image from 'next/image'
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
-import { UserIcon, MapPinIcon, StarIcon, FacebookIcon, TwitterIcon, InstagramIcon, MailIcon, PhoneIcon, Menu } from 'lucide-react'
+import { UserIcon, MapPinIcon, Menu } from 'lucide-react'
 import { useEffect } from 'react'
 import { Sheet, SheetContent, SheetTrigger, SheetTitle, SheetClose } from "@/components/ui/sheet"
 import { InfiniteMovingCard } from '@/components/Scroll'
+import Link from "next/link";
 
 export default function OilLandingPage() {
   useEffect(() => {
@@ -122,12 +123,14 @@ export default function OilLandingPage() {
                 Discover our range of authentic, bull-driven cold pressed oils, crafted using age-old traditional methods.
               </p>
               <div className="flex gap-4">
-                <Button 
-                  size="lg" 
-                  className="bg-[#E88D67] hover:bg-[#D47D57] transition-all hover:scale-105"
-                >
-                  Shop Now
-                </Button>
+                <Link href="/products">
+                  <Button 
+                    size="lg" 
+                    className="bg-[#E88D67] hover:bg-[#D47D57] transition-all hover:scale-105"
+                  >
+                    Shop Now
+                  </Button>
+                </Link>
                 <Button 
                   size="lg" 
                   variant="outline"
@@ -201,11 +204,13 @@ export default function OilLandingPage() {
                       <span className="ml-2 text-lg text-gray-500 line-through">₹{product.originalPrice}</span>
                     </div>
                     <div className="flex flex-col gap-3">
-                      <Button 
-                        className="w-full bg-[#E88D67] hover:bg-[#D47D57] transition-all"
-                      >
-                        View Details
-                      </Button>
+                      <Link href='/1'>
+                        <Button 
+                          className="w-full bg-[#E88D67] hover:bg-[#D47D57] transition-all"
+                        >
+                          View Details
+                        </Button>
+                      </Link>
                       <Button 
                         variant="outline" 
                         className="w-full border-[#8B4513] text-[#8B4513] hover:bg-[#8B4513] hover:text-white transition-all"
@@ -231,13 +236,13 @@ export default function OilLandingPage() {
             <div className="flex flex-col md:flex-row items-center">
               <div className="md:w-1/2 mb-10 md:mb-0 md:pr-10">
                 <p className="text-gray-900 mb-4">
-                  At Aayulkaalam, we're committed to preserving the traditional method of oil extraction using bull-driven wooden churners. Our journey began with a simple belief: that the ancient wisdom of oil extraction provides the purest and most nutritious oils.
+                  At Aayulkaalam, we are committed to preserving the traditional method of oil extraction using bull-driven wooden churners. Our journey began with a simple belief: that the ancient wisdom of oil extraction provides the purest and most nutritious oils.
                 </p>
                 <p className="text-gray-900 mb-4">
                   Founded with a vision to revive traditional oil extraction methods, we ensure that every drop of oil you receive is extracted using time-tested techniques that have been passed down through generations.
                 </p>
                 <p className="text-gray-900">
-                  We're more than just an oil company - we're preservers of tradition and quality. Join us in our mission to bring the authentic taste and health benefits of traditionally extracted oils to your kitchen.
+                  We are more than just an oil company - we are preservers of tradition and quality. Join us in our mission to bring the authentic taste and health benefits of traditionally extracted oils to your kitchen.
                 </p> 
               </div>
               <div className="md:w-1/2 flex flex-col justify-center">
