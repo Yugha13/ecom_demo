@@ -1,3 +1,4 @@
+"use client"
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -115,7 +116,7 @@ const Index = () => {
           </form>
 
           <div className="text-center text-sm text-muted-foreground">
-            Don't have an account?{" "}
+            Dont have an account?{" "}
             <a href="/products" className="text-primary hover:text-primary/80 transition-colors">
               Sign up
             </a>
