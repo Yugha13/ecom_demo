@@ -74,7 +74,7 @@ export default function OilLandingPage() {
               <nav className="flex flex-col gap-4">
                 <SheetClose>
                 <a href="#about" className="text-[#2F5C57] hover:text-[#1D4A44] transition-colors text-lg">
-                  About 123
+                  About
                 </a>
                 </SheetClose>
                 <SheetClose>
@@ -138,8 +138,10 @@ export default function OilLandingPage() {
                   variant="outline"
                   className="border-[#8B4513] text-[#8B4513] hover:bg-[#8B4513] hover:text-white transition-all"
                 >
+                  <Link href={"/login"}>
                   <UserIcon className="mr-2 h-5 w-5" />
                   Login
+                  </Link>
                 </Button>
               </div>
             </div>
