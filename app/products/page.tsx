@@ -10,9 +10,11 @@ const page = () => {
     <div>
         <header className="backdrop-blur-md shadow-sm sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
+        <Link href={"/"}>
           <div className="flex items-center space-x-3">
             <img src={"/logo.png"} className='h-14 '/>
           </div>
+          </Link>
           <nav className="hidden md:block">
             <ul className="flex space-x-6">
               <li>
