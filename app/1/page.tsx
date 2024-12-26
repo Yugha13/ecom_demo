@@ -53,12 +53,14 @@ const ProductCard = () => {
                     </Button>
                 </li>
               <li>
+                <Link href={"/cart"}>
                     <Button variant='ghost'>
                         <div className='flex flex-col place-content-center text-[#2F5C57] hover:text-[#1D4A44] transition-colors'>
                         <ShoppingCartIcon/>
                         </div>
                         View Cart
                     </Button>
+                </Link>
                 </li>
               <li>
                     <Button variant='outline'>

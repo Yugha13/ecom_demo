@@ -137,7 +137,7 @@ const Cart = () => {
     <div className="min-h-screen py-12 bg-gradient-to-b from-secondary/20 to-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-8">
-          <Link href="/" className="inline-flex items-center text-sm text-muted-foreground hover:text-foreground">
+          <Link href="/products" className="inline-flex items-center text-sm text-muted-foreground hover:text-foreground">
             <ArrowLeft className="mr-2 h-4 w-4" />
             Continue Shopping
           </Link>
