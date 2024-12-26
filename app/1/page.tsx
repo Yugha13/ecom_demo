@@ -93,9 +93,9 @@ const ProductCard = () => {
                 </a>
                 </SheetClose>
                 <SheetClose>
-                <a href="#" className="text-[#2F5C57] hover:text-[#1D4A44] transition-colors text-lg">
+                <Link href="/cart" className="text-[#2F5C57] hover:text-[#1D4A44] transition-colors text-lg">
                   Cart
-                </a>
+                </Link>
                 </SheetClose>
                 <SheetClose>
                 <a href="#" className="text-[#2F5C57] hover:text-[#1D4A44] transition-colors text-lg">
