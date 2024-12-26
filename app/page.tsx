@@ -133,16 +133,16 @@ export default function OilLandingPage() {
                     Shop Now
                   </Button>
                 </Link>
+                <Link href={"/login"}>
                 <Button 
                   size="lg" 
                   variant="outline"
                   className="border-[#8B4513] text-[#8B4513] hover:bg-[#8B4513] hover:text-white transition-all"
                 >
-                  <Link href={"/login"}>
                   <UserIcon className="mr-2 h-5 w-5" />
                   Login
-                  </Link>
                 </Button>
+                  </Link>
               </div>
             </div>
             <div className="md:w-1/2">
