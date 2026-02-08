@@ -1,12 +1,12 @@
 "use client";
 
-import React from "react";
+
 import { InfiniteMovingCards } from "./ui/infinite-moving-cards";
 
 export function InfiniteMovingCard() {
   return (
     <div className="rounded-md flex flex-col antialiased bg-[#F5E6D3] text-black items-center justify-center relative overflow-hidden">
-       <h2 className="text-3xl font-bold text-center text-[#2F5C57] mb-12">Testimonials</h2>
+      <h2 className="text-3xl font-bold text-center text-[#2F5C57] mb-12">Testimonials</h2>
       <InfiniteMovingCards
         items={testimonials}
         direction="right"
